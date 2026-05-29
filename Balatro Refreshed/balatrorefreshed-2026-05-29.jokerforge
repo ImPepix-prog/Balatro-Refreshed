@@ -8,7 +8,7 @@
     "description": "Balatro Refreshed its a mod created only by me (Pepix) on a attempt to make a vanilla-like experience",
     "prefix": "Refreshed",
     "main_file": "main.lua",
-    "version": "1.0.2~",
+    "version": "1.0.3~",
     "priority": 0,
     "badge_colour": "123410",
     "badge_text_colour": "ffffff",
@@ -956,7 +956,8 @@
                   "value": "random"
                 },
                 "joker_key": {
-                  "value": "joker"
+                  "value": "monitoringbestfriendedition",
+                  "valueType": "text"
                 },
                 "pool": {
                   "value": ""
@@ -968,7 +969,9 @@
                   "value": "none"
                 },
                 "ignore_slots": {
-                  "value": "respect"
+                  "value": "ignore",
+                  "label": "Ignore",
+                  "valueType": "text"
                 }
               }
             }
@@ -2030,40 +2033,7 @@
   "seals": [],
   "editions": [],
   "vouchers": [],
-  "decks": [
-    {
-      "objectType": "deck",
-      "id": "22be3197-b2f6-48c2-8e80-dce433951160",
-      "name": "Doodle Deck",
-      "description": "All cards are considered face cards",
-      "imagePreview": "/images/placeholderdecks/placeholder-deck-10.png",
-      "objectKey": "doodle_deck",
-      "unlocked": true,
-      "discovered": true,
-      "rules": [
-        {
-          "id": "01e228b0-d56d-4751-9cd9-3c5dd737f034",
-          "trigger": "card_used",
-          "blueprintCompatible": true,
-          "conditionGroups": [],
-          "effects": [],
-          "randomGroups": [],
-          "loops": [],
-          "position": {
-            "x": 800,
-            "y": 276.5
-          }
-        }
-      ],
-      "placeholderCreditIndex": 10,
-      "orderValue": 1,
-      "no_collection": false,
-      "no_interest": false,
-      "no_faces": false,
-      "erratic_deck": false,
-      "hasUserUploadedImage": false
-    }
-  ],
+  "decks": [],
   "version": "1.0.0",
-  "exportedAt": "2026-05-29T05:23:47.465Z"
+  "exportedAt": "2026-05-29T05:58:35.147Z"
 }

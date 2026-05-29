@@ -76,22 +76,19 @@ SMODS.Joker{ --Monitoring
                     extra = {
                         func = function()
                             
-                            local created_joker = false
-                            if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
-                                created_joker = true
-                                G.GAME.joker_buffer = G.GAME.joker_buffer + 1
-                                G.E_MANAGER:add_event(Event({
-                                    func = function()
-                                        local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_joker' })
-                                        if joker_card then
-                                            
-                                            
-                                        end
-                                        G.GAME.joker_buffer = 0
-                                        return true
+                            local created_joker = true
+                            G.E_MANAGER:add_event(Event({
+                                func = function()
+                                    local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_monitoringbestfriendedition' })
+                                    if joker_card then
+                                        
+                                        
                                     end
-                                }))
-                            end
+                                    
+                                    return true
+                                end
+                            }))
+                            
                             if created_joker then
                                 card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_joker'), colour = G.C.BLUE})
                             end
