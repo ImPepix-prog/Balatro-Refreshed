@@ -8,7 +8,7 @@
     "description": "Balatro Refreshed its a mod created only by me (Pepix) on a attempt to make a vanilla-like experience",
     "prefix": "Refreshed",
     "main_file": "main.lua",
-    "version": "1.2.2~",
+    "version": "1.2.3~",
     "priority": 0,
     "badge_colour": "123410",
     "badge_text_colour": "ffffff",
@@ -951,7 +951,7 @@
                   "valueType": "unknown"
                 },
                 "joker_key": {
-                  "value": "[Refreshed]monitoringbestfriendedition",
+                  "value": "[Refreshed]_monitoringbestfriendedition",
                   "valueType": "text"
                 },
                 "pool": {
@@ -2500,5 +2500,5 @@
   "vouchers": [],
   "decks": [],
   "version": "1.0.0",
-  "exportedAt": "2026-05-29T17:21:23.962Z"
+  "exportedAt": "2026-05-29T17:33:52.231Z"
 }
