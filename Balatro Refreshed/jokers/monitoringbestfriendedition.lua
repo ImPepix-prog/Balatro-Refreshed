@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Monitoring (Best Friend Edition)
+SMODS.Joker{ --Monitoring Best Friend Edition
     key = "monitoringbestfriendedition",
     config = {
         extra = {
@@ -7,7 +7,7 @@ SMODS.Joker{ --Monitoring (Best Friend Edition)
         }
     },
     loc_txt = {
-        ['name'] = 'Monitoring (Best Friend Edition)',
+        ['name'] = 'Monitoring Best Friend Edition',
         ['text'] = {
             [1] = 'This joker gains {X:red,C:white}X0.5{} Mult',
             [2] = 'when a king or jack is scored',

@@ -90,7 +90,7 @@ SMODS.Joker{ --Monitoring
                             }))
                             
                             if created_joker then
-                                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_joker'), colour = G.C.BLUE})
+                                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Please, open the door...", colour = G.C.BLUE})
                             end
                             return true
                         end,
