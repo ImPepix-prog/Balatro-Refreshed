@@ -11,7 +11,7 @@ SMODS.Joker{ --Monitoring
         ['text'] = {
             [1] = 'This Joker gains {C:red}+2{} Mult',
             [2] = 'when a king or jack is scored',
-            [3] = '(self destructs after reaching 100 mult)'
+            [3] = '(self destructs after reaching 100 mult){C:inactive}(Currrently +#1# Mult){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

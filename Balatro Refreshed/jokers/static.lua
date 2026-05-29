@@ -12,7 +12,7 @@ SMODS.Joker{ --Static
         ['text'] = {
             [1] = 'this joker gains {C:red}+3{} Mult',
             [2] = 'for each hand played',
-            [3] = 'without discarting'
+            [3] = 'without discarting {C:inactive}(Currrently {C:red}+#1#{} {C:inactive} Mult){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
