@@ -10,7 +10,7 @@ SMODS.Joker{ --Hito maniac
     loc_txt = {
         ['name'] = 'Hito maniac',
         ['text'] = {
-            [1] = 'when a joker triggers {C:green}1 in 2{} chance of giving {X:mult,C:white}X1.5{} Mult.'
+            [1] = 'when a post-score joker triggers {C:green}1 in 2{} chance of giving {X:mult,C:white}X1.5{} Mult.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

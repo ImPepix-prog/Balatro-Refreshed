@@ -60,6 +60,10 @@ if true then
     assert(SMODS.load_file("jokers/hitomaniac.lua"))()
     assert(SMODS.load_file("jokers/feverdream.lua"))()
     assert(SMODS.load_file("jokers/nerdjoker.lua"))()
+    assert(SMODS.load_file("jokers/duality.lua"))()
+    assert(SMODS.load_file("jokers/pngjoker.lua"))()
+    assert(SMODS.load_file("jokers/medicine.lua"))()
+    assert(SMODS.load_file("jokers/monitoringbestfriendedition.lua"))()
 end
 -- load the decks
 if true then
@@ -97,6 +101,16 @@ SMODS.ObjectType({
         ["j_Refreshed_hitomaniac"] = true,
         ["j_Refreshed_feverdream"] = true,
         ["j_Refreshed_nerdjoker"] = true
+    },
+})
+
+SMODS.ObjectType({
+    key = "Refreshed_Refreshed_jokers",
+    cards = {
+        ["j_Refreshed_duality"] = true,
+        ["j_Refreshed_pngjoker"] = true,
+        ["j_Refreshed_medicine"] = true,
+        ["j_Refreshed_monitoringbestfriendedition"] = true
     },
 })
 

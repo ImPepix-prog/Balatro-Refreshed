@@ -9,8 +9,8 @@ SMODS.Joker{ --Hornet
     loc_txt = {
         ['name'] = 'Hornet',
         ['text'] = {
-            [1] = 'this joker gains {X:red,C:white}X0.1{} Mult',
-            [2] = 'for every discard {C:inactive}(Currrently{}{X:mult,C:white} x#1# {} {C:inactive}Mult){}'
+            [1] = 'this joker gains {X:red,C:white}X0.2{} Mult',
+            [2] = 'for every discard {C:inactive}(Currrently{}{X:mult,C:white} x#1# {} {C:inactive}Mult){}.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -43,7 +43,7 @@ SMODS.Joker{ --Hornet
         if context.pre_discard  and not context.blueprint then
             return {
                 func = function()
-                    card.ability.extra.HornetXmult = (card.ability.extra.HornetXmult) + 0.1
+                    card.ability.extra.HornetXmult = (card.ability.extra.HornetXmult) + 0.2
                     return true
                 end
             }

@@ -8,7 +8,7 @@ SMODS.Joker{ --Yoyle Land
     loc_txt = {
         ['name'] = 'Yoyle Land',
         ['text'] = {
-            [1] = 'converts all scoring face cards into {C:attention}Steel{} cards'
+            [1] = 'converts all scoring face cards into {C:attention}Steel{} cards.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

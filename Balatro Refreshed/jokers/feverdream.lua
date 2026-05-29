@@ -8,7 +8,7 @@ SMODS.Joker{ --Fever Dream
     loc_txt = {
         ['name'] = 'Fever Dream',
         ['text'] = {
-            [1] = 'changes played scoring {C:clubs}Clubs{} into other suits'
+            [1] = 'changes played scoring {C:clubs}Clubs{} into other suits.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

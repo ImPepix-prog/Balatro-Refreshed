@@ -12,7 +12,7 @@ SMODS.Joker{ --Spoken for
         ['text'] = {
             [1] = '{X:red,C:white}X3{} Mult if played hand',
             [2] = 'doesnt contain a face card',
-            [3] = 'otherwise {X:red,C:white}X0.5{} Mult'
+            [3] = 'otherwise {X:red,C:white}X0.5{} Mult.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

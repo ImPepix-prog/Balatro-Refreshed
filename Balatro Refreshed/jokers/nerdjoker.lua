@@ -9,7 +9,7 @@ SMODS.Joker{ --Nerd Joker
     loc_txt = {
         ['name'] = 'Nerd Joker',
         ['text'] = {
-            [1] = '{C:red}+20{} Mult if played hand only contains aces'
+            [1] = '{C:red}+20{} Mult if played hand only contains aces.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -37,12 +37,12 @@ SMODS.Joker{ --Nerd Joker
         if context.cardarea == G.jokers and context.joker_main  then
             if (function()
                 local count = 0
-                for _, playing_card in pairs(context.full_hand or {}) do
+                for _, playing_card in pairs(context.scoring_hand or {}) do
                     if playing_card:get_id() == A then
                         count = count + 1
                     end
                 end
-                return count == #context.full_hand
+                return count == #context.scoring_hand
             end)() then
                 return {
                     mult = 20

@@ -1,42 +1,41 @@
 
-SMODS.Joker{ --Lazy joker
-    key = "lazyjoker",
+SMODS.Joker{ --Duality
+    key = "duality",
     config = {
         extra = {
-            mult0 = 2
         }
     },
     loc_txt = {
-        ['name'] = 'Lazy joker',
+        ['name'] = 'Duality',
         ['text'] = {
-            [1] = 'all scoring card gives {C:red}+2 Mult{}.'
+            [1] = 'balances {C:blue}Chips{} and {C:red}Mult{}.'
         },
         ['unlock'] = {
-            [1] = ''
+            [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 3,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 4,
-    rarity = 1,
-    blueprint_compat = true,
+    cost = 6,
+    rarity = 3,
+    blueprint_compat = false,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
+        if context.after and context.cardarea == G.jokers  and not context.blueprint then
             return {
-                mult = 2
+                balance = true
             }
         end
     end

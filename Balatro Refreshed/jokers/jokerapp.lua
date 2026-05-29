@@ -9,7 +9,7 @@ SMODS.Joker{ --Joker app
         ['name'] = 'Joker app',
         ['text'] = {
             [1] = 'When {C:attention}Blind{} is selected creates',
-            [2] = 'a random Joker'
+            [2] = 'a random Joker.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

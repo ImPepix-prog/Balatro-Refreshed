@@ -10,7 +10,7 @@ SMODS.Joker{ --Toxic Joker
         ['text'] = {
             [1] = 'If the first played hand',
             [2] = 'of the round contains 1 card',
-            [3] = 'applies a random {C:dark_edition}Edition{} to it'
+            [3] = 'applies a random {C:dark_edition}Edition{} to it.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -33,6 +33,14 @@ SMODS.Joker{ --Toxic Joker
     discovered = true,
     atlas = 'CustomJokers',
     pools = { ["Refreshed_mycustom_jokers"] = true },
+    in_pool = function(self, args)
+        return (
+            not args 
+            or args.source ~= 'sho' and args.source ~= 'buf' and args.source ~= 'jud' and args.source ~= 'uta' 
+            or args.source == 'rif' or args.source == 'rta' or args.source == 'sou' or args.source == 'wra'
+        )
+        and true
+    end,
     
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
