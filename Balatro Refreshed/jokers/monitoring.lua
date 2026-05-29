@@ -79,7 +79,7 @@ SMODS.Joker{ --Monitoring
                             local created_joker = true
                             G.E_MANAGER:add_event(Event({
                                 func = function()
-                                    local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_[Refreshed]_monitoringbestfriendedition' })
+                                    local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_Refreshed_monitoringbestfriendedition' })
                                     if joker_card then
                                         
                                         

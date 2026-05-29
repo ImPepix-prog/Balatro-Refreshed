@@ -11,7 +11,7 @@ SMODS.Joker{ --Toilet
         ['text'] = {
             [1] = 'this joker gains {X:red,C:white}X0.2{} Mult',
             [2] = 'for every played hand containing a {C:attention}flush{}',
-            [3] = '{C:inactive}(Currently {}{X:mult,C:white}X{} {C:inactive}Mult){}.'
+            [3] = '{C:inactive}(Currently {}{X:mult,C:white}X#1# {} {C:inactive}Mult){}.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
