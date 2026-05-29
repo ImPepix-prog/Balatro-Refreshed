@@ -30,7 +30,7 @@ SMODS.Joker{ --Fever Dream
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  and not context.blueprint then

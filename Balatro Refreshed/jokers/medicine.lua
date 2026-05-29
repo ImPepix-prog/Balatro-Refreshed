@@ -26,7 +26,7 @@ SMODS.Joker{ --Medicine
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 6,
+    cost = 8,
     rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
@@ -34,7 +34,7 @@ SMODS.Joker{ --Medicine
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_Refreshed_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true, ["Refreshed_teto_joker"] = true },
     
     loc_vars = function(self, info_queue, card)
         

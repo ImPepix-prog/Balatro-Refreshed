@@ -31,18 +31,18 @@ SMODS.Joker{ --Nerd Joker
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if (function()
                 local count = 0
-                for _, playing_card in pairs(context.scoring_hand or {}) do
+                for _, playing_card in pairs(context.full_hand or {}) do
                     if playing_card:get_id() == A then
                         count = count + 1
                     end
                 end
-                return count == #context.scoring_hand
+                return count == #context.full_hand
             end)() then
                 return {
                     mult = 20

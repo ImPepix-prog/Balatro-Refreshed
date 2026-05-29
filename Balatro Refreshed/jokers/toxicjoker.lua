@@ -32,7 +32,7 @@ SMODS.Joker{ --Toxic Joker
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true },
     in_pool = function(self, args)
         return (
             not args 

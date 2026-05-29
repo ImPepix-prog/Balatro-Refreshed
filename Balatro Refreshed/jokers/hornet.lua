@@ -32,7 +32,7 @@ SMODS.Joker{ --Hornet
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     loc_vars = function(self, info_queue, card)
         
@@ -45,7 +45,8 @@ SMODS.Joker{ --Hornet
                 func = function()
                     card.ability.extra.HornetXmult = (card.ability.extra.HornetXmult) + 0.2
                     return true
-                end
+                end,
+                message = "Upgrade!"
             }
         end
         if context.cardarea == G.jokers and context.joker_main  then

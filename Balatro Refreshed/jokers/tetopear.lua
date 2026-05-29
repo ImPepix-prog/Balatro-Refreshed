@@ -34,7 +34,7 @@ SMODS.Joker{ --Teto Pear
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_Refreshed_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true, ["Refreshed_teto_joker"] = true },
     
     loc_vars = function(self, info_queue, card)
         
@@ -67,7 +67,8 @@ SMODS.Joker{ --Teto Pear
                 func = function()
                     card.ability.extra.TetoPearRemainingTime = math.max(0, (card.ability.extra.TetoPearRemainingTime) - 1)
                     return true
-                end
+                end,
+                message = "-1 Round!"
             }
         end
         if context.before and context.cardarea == G.jokers  and not context.blueprint then

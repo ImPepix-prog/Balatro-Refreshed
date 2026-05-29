@@ -34,7 +34,7 @@ SMODS.Joker{ --Monitoring
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     loc_vars = function(self, info_queue, card)
         
@@ -45,6 +45,9 @@ SMODS.Joker{ --Monitoring
         if context.individual and context.cardarea == G.play  and not context.blueprint then
             if (context.other_card:get_id() == 11 or context.other_card:get_id() == 13) then
                 card.ability.extra.MonitoringMult = (card.ability.extra.MonitoringMult) + 2
+                return {
+                    message = "Upgrade!"
+                }
             end
         end
         if context.cardarea == G.jokers and context.joker_main  then

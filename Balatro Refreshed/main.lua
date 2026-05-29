@@ -24,6 +24,14 @@ SMODS.Atlas({
     atlas_table = "ASSET_ATLAS"
 })
 
+SMODS.Atlas({
+    key = "CustomDecks", 
+    path = "CustomDecks.png", 
+    px = 71,
+    py = 95, 
+    atlas_table = "ASSET_ATLAS"
+})
+
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
@@ -58,7 +66,16 @@ if true then
     assert(SMODS.load_file("jokers/monitoringbestfriendedition.lua"))()
     assert(SMODS.load_file("jokers/tetopear.lua"))()
     assert(SMODS.load_file("jokers/toilet.lua"))()
+    assert(SMODS.load_file("jokers/jokeruser.lua"))()
+    assert(SMODS.load_file("jokers/divorcepapers.lua"))()
+    assert(SMODS.load_file("jokers/bottleopener.lua"))()
 end
+-- load the decks
+if true then
+    assert(SMODS.load_file("decks/striped_deck.lua"))()
+    assert(SMODS.load_file("decks/purple_deck.lua"))()
+end
+
 SMODS.ObjectType({
     key = "Refreshed_food",
     cards = {
@@ -75,7 +92,7 @@ SMODS.ObjectType({
 })
 
 SMODS.ObjectType({
-    key = "Refreshed_mycustom_jokers",
+    key = "Refreshed_Refreshed_jokers",
     cards = {
         ["j_Refreshed_lazyjoker"] = true,
         ["j_Refreshed_jackpot"] = true,
@@ -89,19 +106,27 @@ SMODS.ObjectType({
         ["j_Refreshed_spokenfor"] = true,
         ["j_Refreshed_hitomaniac"] = true,
         ["j_Refreshed_feverdream"] = true,
-        ["j_Refreshed_nerdjoker"] = true
-    },
-})
-
-SMODS.ObjectType({
-    key = "Refreshed_Refreshed_jokers",
-    cards = {
+        ["j_Refreshed_nerdjoker"] = true,
         ["j_Refreshed_duality"] = true,
         ["j_Refreshed_pngjoker"] = true,
         ["j_Refreshed_medicine"] = true,
         ["j_Refreshed_monitoringbestfriendedition"] = true,
         ["j_Refreshed_tetopear"] = true,
-        ["j_Refreshed_toilet"] = true
+        ["j_Refreshed_toilet"] = true,
+        ["j_Refreshed_jokeruser"] = true,
+        ["j_Refreshed_divorcepapers"] = true,
+        ["j_Refreshed_bottleopener"] = true
+    },
+})
+
+SMODS.ObjectType({
+    key = "Refreshed_teto_joker",
+    cards = {
+        ["j_Refreshed_machinelove"] = true,
+        ["j_Refreshed_spokenfor"] = true,
+        ["j_Refreshed_hitomaniac"] = true,
+        ["j_Refreshed_medicine"] = true,
+        ["j_Refreshed_tetopear"] = true
     },
 })
 

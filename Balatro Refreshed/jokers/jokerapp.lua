@@ -31,7 +31,7 @@ SMODS.Joker{ --Joker app
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     calculate = function(self, card, context)
         if context.setting_blind  then

@@ -33,7 +33,7 @@ SMODS.Joker{ --Duality
     pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.after and context.cardarea == G.jokers  and not context.blueprint then
+        if context.cardarea == G.jokers and context.joker_main  and not context.blueprint then
             return {
                 balance = true
             }

@@ -34,7 +34,7 @@ SMODS.Joker{ --Spoken for
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true, ["Refreshed_teto_joker"] = true },
     
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then

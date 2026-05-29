@@ -32,7 +32,7 @@ SMODS.Joker{ --Hito maniac
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["Refreshed_mycustom_jokers"] = true },
+    pools = { ["Refreshed_Refreshed_jokers"] = true, ["Refreshed_teto_joker"] = true },
     
     loc_vars = function(self, info_queue, card)
         
