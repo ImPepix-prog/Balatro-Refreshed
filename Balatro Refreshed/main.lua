@@ -56,6 +56,8 @@ if true then
     assert(SMODS.load_file("jokers/pngjoker.lua"))()
     assert(SMODS.load_file("jokers/medicine.lua"))()
     assert(SMODS.load_file("jokers/monitoringbestfriendedition.lua"))()
+    assert(SMODS.load_file("jokers/tetopear.lua"))()
+    assert(SMODS.load_file("jokers/toilet.lua"))()
 end
 SMODS.ObjectType({
     key = "Refreshed_food",
@@ -97,7 +99,9 @@ SMODS.ObjectType({
         ["j_Refreshed_duality"] = true,
         ["j_Refreshed_pngjoker"] = true,
         ["j_Refreshed_medicine"] = true,
-        ["j_Refreshed_monitoringbestfriendedition"] = true
+        ["j_Refreshed_monitoringbestfriendedition"] = true,
+        ["j_Refreshed_tetopear"] = true,
+        ["j_Refreshed_toilet"] = true
     },
 })
 
