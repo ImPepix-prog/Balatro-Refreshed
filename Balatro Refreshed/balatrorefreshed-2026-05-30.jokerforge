@@ -635,7 +635,7 @@
       "objectKey": "toxicjoker",
       "id": "c4cf34a7-c80b-4430-ac92-8419b5b64dd0",
       "name": "Toxic Joker",
-      "description": "Scoring cards have a {C:green}1 in 4{} chance of[s]gaining a random {C:dark_edition}Edition{}",
+      "description": "Scoring cards have a {C:green}1 in 2{} chance of[s]giving {C:red}+3{} Mult while held in hand",
       "imagePreview": "data:image/png;base64,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",
       "overlayImagePreview": "",
       "rarity": 2,
@@ -658,37 +658,30 @@
           "effects": [],
           "randomGroups": [
             {
-              "id": "c8e3b6e8-c768-4e8e-b9ea-c2e5d3b85e8b",
+              "id": "d27fc866-d5da-4475-8406-77266aa8f17e",
               "chance_numerator": {
                 "value": 1,
                 "valueType": "number"
               },
               "chance_denominator": {
-                "value": 4,
+                "value": 2,
                 "valueType": "number"
               },
               "respect_probability_effects": true,
               "custom_key": "",
               "effects": [
                 {
-                  "id": "b78a021f-df27-4c07-bdbb-263c082df31e",
-                  "type": "edit_playing_card",
+                  "id": "f1bc673a-d849-464b-94c0-7c9d525e7c9a",
+                  "type": "permanent_bonus",
                   "params": {
-                    "new_rank": {
-                      "value": "none"
+                    "bonus_type": {
+                      "value": "perma_h_mult",
+                      "label": "Permanent Held Mult",
+                      "valueType": "text"
                     },
-                    "new_suit": {
-                      "value": "none"
-                    },
-                    "new_enhancement": {
-                      "value": "none"
-                    },
-                    "new_seal": {
-                      "value": "none"
-                    },
-                    "new_edition": {
-                      "value": "random",
-                      "label": "Random"
+                    "value": {
+                      "value": 3,
+                      "valueType": "number"
                     }
                   },
                   "customMessage": "Upgraded!"
@@ -698,8 +691,8 @@
           ],
           "loops": [],
           "position": {
-            "x": 800,
-            "y": 276.5
+            "x": 799,
+            "y": 277.5
           }
         }
       ],
@@ -3275,5 +3268,5 @@
     }
   ],
   "version": "1.0.0",
-  "exportedAt": "2026-05-30T04:21:09.134Z"
+  "exportedAt": "2026-05-30T06:08:55.560Z"
 }

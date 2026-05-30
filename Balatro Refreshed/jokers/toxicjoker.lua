@@ -3,14 +3,15 @@ SMODS.Joker{ --Toxic Joker
     key = "toxicjoker",
     config = {
         extra = {
-            odds = 4
+            odds = 2,
+            pb_h_mult_f1bc673a = 3
         }
     },
     loc_txt = {
         ['name'] = 'Toxic Joker',
         ['text'] = {
-            [1] = 'Scoring cards have a {C:green}1 in 4{} chance of',
-            [2] = 'gaining a random {C:dark_edition}Edition{}'
+            [1] = 'Scoring cards have a {C:green}1 in 2{} chance of',
+            [2] = 'giving {C:red}+3{} Mult while held in hand'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -43,20 +44,10 @@ SMODS.Joker{ --Toxic Joker
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
             if true then
-                if SMODS.pseudorandom_probability(card, 'group_0_c8e3b6e8', 1, card.ability.extra.odds, 'j_Refreshed_toxicjoker', false) then
-                    local scored_card = context.other_card
-                    G.E_MANAGER:add_event(Event({
-                        func = function()
-                            
-                            local edition = pseudorandom_element({'e_foil','e_holo','e_polychrome','e_negative'}, 'random edition')
-                            if random_edition then
-                                scored_card:set_edition(random_edition, true)
-                            end
-                            card_eval_status_text(scored_card, 'extra', nil, nil, nil, {message = "Upgraded!", colour = G.C.ORANGE})
-                            return true
-                        end
-                    }))
-                    
+                if SMODS.pseudorandom_probability(card, 'group_0_d27fc866', 1, card.ability.extra.odds, 'j_Refreshed_toxicjoker', false) then
+                    context.other_card.ability.perma_h_mult = context.other_card.ability.perma_h_mult or 0
+                    context.other_card.ability.perma_h_mult = context.other_card.ability.perma_h_mult + 3
+                    SMODS.calculate_effect({extra = { message = "Upgraded!", colour = G.C.MULT }, card = card}, card)
                 end
             end
         end
