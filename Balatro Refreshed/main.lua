@@ -62,7 +62,13 @@ if true then
     assert(SMODS.load_file("jokers/divorcepapers.lua"))()
     assert(SMODS.load_file("jokers/bottleopener.lua"))()
     assert(SMODS.load_file("jokers/brainimplosionenergydrink.lua"))()
+    assert(SMODS.load_file("jokers/spongy.lua"))()
+    assert(SMODS.load_file("jokers/mjoker.lua"))()
+    assert(SMODS.load_file("jokers/spritesheet.lua"))()
+    assert(SMODS.load_file("jokers/rekoj.lua"))()
+    assert(SMODS.load_file("jokers/jokerpack.lua"))()
     assert(SMODS.load_file("jokers/hatsunemiku.lua"))()
+    assert(SMODS.load_file("jokers/kasaneteto.lua"))()
 end
 SMODS.ObjectType({
     key = "Refreshed_food",
@@ -105,7 +111,13 @@ SMODS.ObjectType({
         ["j_Refreshed_divorcepapers"] = true,
         ["j_Refreshed_bottleopener"] = true,
         ["j_Refreshed_brainimplosionenergydrink"] = true,
-        ["j_Refreshed_hatsunemiku"] = true
+        ["j_Refreshed_spongy"] = true,
+        ["j_Refreshed_mjoker"] = true,
+        ["j_Refreshed_spritesheet"] = true,
+        ["j_Refreshed_rekoj"] = true,
+        ["j_Refreshed_jokerpack"] = true,
+        ["j_Refreshed_hatsunemiku"] = true,
+        ["j_Refreshed_kasaneteto"] = true
     },
 })
 

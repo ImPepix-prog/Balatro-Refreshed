@@ -1,16 +1,15 @@
 
-SMODS.Joker{ --Toxic Joker
-    key = "toxicjoker",
+SMODS.Joker{ --rekoJ
+    key = "rekoj",
     config = {
         extra = {
-            pb_h_mult_f1bc673a = 4
+            cardsindeck = 0
         }
     },
     loc_txt = {
-        ['name'] = 'Toxic Joker',
+        ['name'] = 'rekoJ',
         ['text'] = {
-            [1] = 'Played cards permanently gain {C:red}+4{} Mult',
-            [2] = 'that is given when held in hand'
+            [1] = '{C:red}+0.5{} Mult for every remaining card in the deck {C:inactive}(Currently {} {C:red}+#1#{} {C:inactive}Mult){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -18,14 +17,14 @@ SMODS.Joker{ --Toxic Joker
     },
     pos = {
         x = 6,
-        y = 0
+        y = 2
     },
     display_size = {
         w = 71 * 1, 
         h = 95 * 1
     },
     cost = 5,
-    rarity = 2,
+    rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -34,12 +33,15 @@ SMODS.Joker{ --Toxic Joker
     atlas = 'CustomJokers',
     pools = { ["Refreshed_Refreshed_jokers"] = true },
     
+    loc_vars = function(self, info_queue, card)
+        
+        return {vars = {((#(G.deck and G.deck.cards or {}) or 0)) * 0.5}}
+    end,
+    
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
-            context.other_card.ability.perma_h_mult = context.other_card.ability.perma_h_mult or 0
-            context.other_card.ability.perma_h_mult = context.other_card.ability.perma_h_mult + 4
+        if context.cardarea == G.jokers and context.joker_main  then
             return {
-                extra = { message = "Upgraded!", colour = G.C.MULT }, card = card
+                mult = (#(G.deck and G.deck.cards or {})) * 0.5
             }
         end
     end

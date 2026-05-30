@@ -23,7 +23,7 @@ SMODS.Joker{ --Machine Love
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 6,
+    cost = 8,
     rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
