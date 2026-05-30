@@ -4,7 +4,7 @@ SMODS.Joker{ --Spoken for
     config = {
         extra = {
             xmult0 = 3,
-            xmult = 0.5
+            xmult = 0.75
         }
     },
     loc_txt = {
@@ -12,14 +12,14 @@ SMODS.Joker{ --Spoken for
         ['text'] = {
             [1] = '{X:red,C:white}X3{} Mult if played hand',
             [2] = 'doesnt contain a face card',
-            [3] = 'otherwise {X:red,C:white}X0.5{} Mult.'
+            [3] = 'otherwise {X:red,C:white}X0.75{} Mult'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 9,
+        x = 8,
         y = 0
     },
     display_size = {
@@ -60,7 +60,7 @@ SMODS.Joker{ --Spoken for
                 return count >= 1
             end)() then
                 return {
-                    Xmult = 0.5
+                    Xmult = 0.75
                 }
             end
         end

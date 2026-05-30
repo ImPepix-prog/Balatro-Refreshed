@@ -15,14 +15,14 @@ SMODS.Joker{ --Duality
         }
     },
     pos = {
-        x = 3,
+        x = 2,
         y = 1
     },
     display_size = {
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 6,
+    cost = 8,
     rarity = 3,
     blueprint_compat = false,
     eternal_compat = true,

@@ -54,7 +54,6 @@ if true then
     assert(SMODS.load_file("jokers/hornet.lua"))()
     assert(SMODS.load_file("jokers/machinelove.lua"))()
     assert(SMODS.load_file("jokers/toxicjoker.lua"))()
-    assert(SMODS.load_file("jokers/monitoring.lua"))()
     assert(SMODS.load_file("jokers/static.lua"))()
     assert(SMODS.load_file("jokers/spokenfor.lua"))()
     assert(SMODS.load_file("jokers/hitomaniac.lua"))()
@@ -63,6 +62,7 @@ if true then
     assert(SMODS.load_file("jokers/duality.lua"))()
     assert(SMODS.load_file("jokers/pngjoker.lua"))()
     assert(SMODS.load_file("jokers/medicine.lua"))()
+    assert(SMODS.load_file("jokers/monitoring.lua"))()
     assert(SMODS.load_file("jokers/monitoringbestfriendedition.lua"))()
     assert(SMODS.load_file("jokers/tetopear.lua"))()
     assert(SMODS.load_file("jokers/toilet.lua"))()
@@ -103,7 +103,6 @@ SMODS.ObjectType({
         ["j_Refreshed_hornet"] = true,
         ["j_Refreshed_machinelove"] = true,
         ["j_Refreshed_toxicjoker"] = true,
-        ["j_Refreshed_monitoring"] = true,
         ["j_Refreshed_static"] = true,
         ["j_Refreshed_spokenfor"] = true,
         ["j_Refreshed_hitomaniac"] = true,
@@ -112,6 +111,7 @@ SMODS.ObjectType({
         ["j_Refreshed_duality"] = true,
         ["j_Refreshed_pngjoker"] = true,
         ["j_Refreshed_medicine"] = true,
+        ["j_Refreshed_monitoring"] = true,
         ["j_Refreshed_monitoringbestfriendedition"] = true,
         ["j_Refreshed_tetopear"] = true,
         ["j_Refreshed_toilet"] = true,

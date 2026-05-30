@@ -9,7 +9,7 @@ SMODS.Joker{ --Machine Love
     loc_txt = {
         ['name'] = 'Machine Love',
         ['text'] = {
-            [1] = 'Played {C:hearts}Heart{} suit face cards give {X:mult,C:white}X 2 Mult{}.'
+            [1] = 'Played {C:hearts}Heart{} suit face cards give {X:mult,C:white}X2{} Mult'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

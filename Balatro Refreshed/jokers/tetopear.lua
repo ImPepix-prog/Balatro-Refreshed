@@ -26,7 +26,7 @@ SMODS.Joker{ --Teto Pear
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 5,
+    cost = 6,
     rarity = 2,
     blueprint_compat = true,
     eternal_compat = false,

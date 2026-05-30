@@ -19,7 +19,7 @@ SMODS.Joker{ --Medicine
         }
     },
     pos = {
-        x = 5,
+        x = 4,
         y = 1
     },
     display_size = {

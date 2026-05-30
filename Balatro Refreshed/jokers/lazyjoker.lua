@@ -9,7 +9,7 @@ SMODS.Joker{ --Lazy joker
     loc_txt = {
         ['name'] = 'Lazy joker',
         ['text'] = {
-            [1] = 'all scoring card gives {C:red}+2 Mult{}.'
+            [1] = 'all scoring card gives {C:red}+2 {}Mult'
         },
         ['unlock'] = {
             [1] = ''

@@ -17,8 +17,8 @@ SMODS.Joker{ --Hito maniac
         }
     },
     pos = {
-        x = 0,
-        y = 1
+        x = 9,
+        y = 0
     },
     display_size = {
         w = 71 * 1, 

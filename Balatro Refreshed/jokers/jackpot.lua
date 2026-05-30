@@ -10,7 +10,7 @@ SMODS.Joker{ --Jackpot
     loc_txt = {
         ['name'] = 'Jackpot',
         ['text'] = {
-            [1] = 'Played 7s have a {C:green}1 in 7{} chance of giving {X:red,C:white}x7mult{}.'
+            [1] = 'Played 7s have a {C:green}1 in 7{} chance of giving {X:red,C:white}x7{} Mult'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

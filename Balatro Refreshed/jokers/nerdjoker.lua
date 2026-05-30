@@ -3,20 +3,21 @@ SMODS.Joker{ --Nerd Joker
     key = "nerdjoker",
     config = {
         extra = {
-            mult0 = 20
+            mult0 = 15,
+            chips0 = -10
         }
     },
     loc_txt = {
         ['name'] = 'Nerd Joker',
         ['text'] = {
-            [1] = '{C:red}+20{} Mult if played hand only contains aces.'
+            [1] = 'Played {C:attention}Aces{} give {C:red}+15{} Mult other scoring cards give {C:blue}-10{} Chips'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 2,
+        x = 1,
         y = 1
     },
     display_size = {
@@ -34,18 +35,14 @@ SMODS.Joker{ --Nerd Joker
     pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
-            if (function()
-                local count = 0
-                for _, playing_card in pairs(context.full_hand or {}) do
-                    if playing_card:get_id() == A then
-                        count = count + 1
-                    end
-                end
-                return count == #context.full_hand
-            end)() then
+        if context.individual and context.cardarea == G.play  then
+            if context.other_card:get_id() == 14 then
                 return {
-                    mult = 20
+                    mult = 15
+                }
+            elseif not (context.other_card:get_id() == 14) then
+                return {
+                    chips = -10
                 }
             end
         end
