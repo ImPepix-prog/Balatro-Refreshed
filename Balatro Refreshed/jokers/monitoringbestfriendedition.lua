@@ -52,6 +52,9 @@ SMODS.Joker{ --Monitoring Best Friend Edition
         if context.individual and context.cardarea == G.play  and not context.blueprint then
             if (context.other_card:get_id() == 11 or context.other_card:get_id() == 13) then
                 card.ability.extra.MonitoringBestFriendEditiXMult = (card.ability.extra.MonitoringBestFriendEditiXMult) + 0.5
+                return {
+                    message = "Upgrade!"
+                }
             end
         end
         if context.cardarea == G.jokers and context.joker_main  then

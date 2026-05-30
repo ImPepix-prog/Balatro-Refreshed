@@ -35,19 +35,19 @@ SMODS.Joker{ --Divorce Papers
     pools = { ["Refreshed_Refreshed_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
+        if context.before and context.cardarea == G.jokers  then
             if ((function()
                 local count = 0
                 for _, playing_card in pairs(context.scoring_hand or {}) do
-                    if playing_card:get_id() == K then
+                    if playing_card:get_id() == Q then
                         count = count + 1
                     end
                 end
                 return count >= 1
-            end)()) and ((function()
+            end)() and (function()
                 local count = 0
                 for _, playing_card in pairs(context.scoring_hand or {}) do
-                    if playing_card:get_id() == Q then
+                    if playing_card:get_id() == K then
                         count = count + 1
                     end
                 end
@@ -61,7 +61,7 @@ SMODS.Joker{ --Divorce Papers
                         local target_dollars = G.GAME.dollars + 5
                         local dollar_value = target_dollars - current_dollars
                         ease_dollars(dollar_value)
-                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "+"..tostring(5), colour = G.C.MONEY})
+                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Divorced!", colour = G.C.MONEY})
                         return true
                     end
                 }

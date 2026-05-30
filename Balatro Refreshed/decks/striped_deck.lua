@@ -15,7 +15,7 @@ SMODS.Back {
     no_collection = false,
     atlas = 'CustomDecks',
     apply = function(self, back)
-        G.GAME.starting_params.hands = G.GAME.starting_params.hands + 3
+        G.GAME.starting_params.hands = G.GAME.starting_params.hands + 6
         G.GAME.starting_params.hands = 0
     end
 }

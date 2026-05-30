@@ -18,8 +18,8 @@ SMODS.Back {
     no_collection = false,
     atlas = 'CustomDecks',
     apply = function(self, back)
-        G.GAME.starting_params.hands = G.GAME.starting_params.hands + 1
-        G.GAME.starting_params.hands = G.GAME.starting_params.hands + 1
+        G.GAME.starting_params.hands = G.GAME.starting_params.hands + 5
+        G.GAME.starting_params.hands = G.GAME.starting_params.hands + 4
         return {
             
             G.E_MANAGER:add_event(Event({

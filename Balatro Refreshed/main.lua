@@ -69,6 +69,8 @@ if true then
     assert(SMODS.load_file("jokers/jokeruser.lua"))()
     assert(SMODS.load_file("jokers/divorcepapers.lua"))()
     assert(SMODS.load_file("jokers/bottleopener.lua"))()
+    assert(SMODS.load_file("jokers/brainimplosionenergydrink.lua"))()
+    assert(SMODS.load_file("jokers/hatsunemiku.lua"))()
 end
 -- load the decks
 if true then
@@ -115,7 +117,9 @@ SMODS.ObjectType({
         ["j_Refreshed_toilet"] = true,
         ["j_Refreshed_jokeruser"] = true,
         ["j_Refreshed_divorcepapers"] = true,
-        ["j_Refreshed_bottleopener"] = true
+        ["j_Refreshed_bottleopener"] = true,
+        ["j_Refreshed_brainimplosionenergydrink"] = true,
+        ["j_Refreshed_hatsunemiku"] = true
     },
 })
 
@@ -126,7 +130,8 @@ SMODS.ObjectType({
         ["j_Refreshed_spokenfor"] = true,
         ["j_Refreshed_hitomaniac"] = true,
         ["j_Refreshed_medicine"] = true,
-        ["j_Refreshed_tetopear"] = true
+        ["j_Refreshed_tetopear"] = true,
+        ["j_Refreshed_brainimplosionenergydrink"] = true
     },
 })
 

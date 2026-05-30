@@ -45,8 +45,14 @@ SMODS.Joker{ --Medicine
         if context.individual and context.cardarea == G.play  and not context.blueprint then
             if context.other_card:is_suit("Hearts") then
                 card.ability.extra.MedicineXMult = (card.ability.extra.MedicineXMult) + 0.2
+                return {
+                    message = "Upgrade!"
+                }
             elseif not (context.other_card:is_suit("Hearts")) then
                 card.ability.extra.MedicineXMult = 1
+                return {
+                    message = "Reset!"
+                }
             end
         end
         if context.cardarea == G.jokers and context.joker_main  then
