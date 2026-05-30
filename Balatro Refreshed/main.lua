@@ -24,14 +24,6 @@ SMODS.Atlas({
     atlas_table = "ASSET_ATLAS"
 })
 
-SMODS.Atlas({
-    key = "CustomDecks", 
-    path = "CustomDecks.png", 
-    px = 71,
-    py = 95, 
-    atlas_table = "ASSET_ATLAS"
-})
-
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
@@ -72,12 +64,6 @@ if true then
     assert(SMODS.load_file("jokers/brainimplosionenergydrink.lua"))()
     assert(SMODS.load_file("jokers/hatsunemiku.lua"))()
 end
--- load the decks
-if true then
-    assert(SMODS.load_file("decks/striped_deck.lua"))()
-    assert(SMODS.load_file("decks/purple_deck.lua"))()
-end
-
 SMODS.ObjectType({
     key = "Refreshed_food",
     cards = {
