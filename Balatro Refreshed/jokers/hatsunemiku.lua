@@ -17,8 +17,8 @@ SMODS.Joker{ --Hatsune Miku
         }
     },
     pos = {
-        x = 8,
-        y = 2
+        x = 0,
+        y = 3
     },
     display_size = {
         w = 71 * 1, 
@@ -34,8 +34,8 @@ SMODS.Joker{ --Hatsune Miku
     atlas = 'CustomJokers',
     pools = { ["Refreshed_Refreshed_jokers"] = true },
     soul_pos = {
-        x = 9,
-        y = 2
+        x = 1,
+        y = 3
     },
     in_pool = function(self, args)
         return (

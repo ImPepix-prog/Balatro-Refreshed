@@ -21,7 +21,7 @@ SMODS.Joker{ --Kasane Teto
         }
     },
     pos = {
-        x = 0,
+        x = 2,
         y = 3
     },
     display_size = {
@@ -38,7 +38,7 @@ SMODS.Joker{ --Kasane Teto
     atlas = 'CustomJokers',
     pools = { ["Refreshed_Refreshed_jokers"] = true },
     soul_pos = {
-        x = 1,
+        x = 3,
         y = 3
     },
     in_pool = function(self, args)

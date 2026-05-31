@@ -24,6 +24,14 @@ SMODS.Atlas({
     atlas_table = "ASSET_ATLAS"
 })
 
+SMODS.Atlas({
+    key = "CustomEnhancements", 
+    path = "CustomEnhancements.png", 
+    px = 71,
+    py = 95, 
+    atlas_table = "ASSET_ATLAS"
+})
+
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
@@ -67,9 +75,17 @@ if true then
     assert(SMODS.load_file("jokers/spritesheet.lua"))()
     assert(SMODS.load_file("jokers/rekoj.lua"))()
     assert(SMODS.load_file("jokers/jokerpack.lua"))()
+    assert(SMODS.load_file("jokers/cellphone.lua"))()
+    assert(SMODS.load_file("jokers/copperjoker.lua"))()
     assert(SMODS.load_file("jokers/hatsunemiku.lua"))()
     assert(SMODS.load_file("jokers/kasaneteto.lua"))()
+    assert(SMODS.load_file("jokers/akitaneru.lua"))()
 end
+-- load the enhancements
+if true then
+    assert(SMODS.load_file("enhancements/copper.lua"))()
+end
+
 SMODS.ObjectType({
     key = "Refreshed_food",
     cards = {
@@ -116,8 +132,11 @@ SMODS.ObjectType({
         ["j_Refreshed_spritesheet"] = true,
         ["j_Refreshed_rekoj"] = true,
         ["j_Refreshed_jokerpack"] = true,
+        ["j_Refreshed_cellphone"] = true,
+        ["j_Refreshed_copperjoker"] = true,
         ["j_Refreshed_hatsunemiku"] = true,
-        ["j_Refreshed_kasaneteto"] = true
+        ["j_Refreshed_kasaneteto"] = true,
+        ["j_Refreshed_akitaneru"] = true
     },
 })
 

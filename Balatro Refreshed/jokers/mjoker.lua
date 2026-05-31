@@ -4,15 +4,15 @@ SMODS.Joker{ --M Joker
     config = {
         extra = {
             MJokerMult = 0,
-            MJokerChips = 0
+            MJokerChips = 0,
+            levels0 = 1
         }
     },
     loc_txt = {
         ['name'] = 'M Joker',
         ['text'] = {
-            [1] = 'this joker gains {C:blue}+15{} Chips and {C:red}+2{} Mult',
-            [2] = 'for every played hand containing a pair',
-            [3] = '{C:inactive}(Currently {}{C:blue}+#2# {}{C:inactive}Chips{} {C:red}+#1# {}{C:inactive}Mult){}'
+            [1] = 'If played poker hand contains a {C:attention}pair{}',
+            [2] = '{C:attention}level up pair by 1 level{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -44,29 +44,12 @@ SMODS.Joker{ --M Joker
     calculate = function(self, card, context)
         if context.before and context.cardarea == G.jokers  then
             if next(context.poker_hands["Pair"]) then
+                local target_hand = "Pair"
+                level_up_hand(card, target_hand, true, 1)
                 return {
-                    func = function()
-                        card.ability.extra.MJokerMult = (card.ability.extra.MJokerMult) + 2
-                        return true
-                    end,
-                    message = "Upgrade!",
-                    extra = {
-                        func = function()
-                            card.ability.extra.MJokerChips = (card.ability.extra.MJokerChips) + 15
-                            return true
-                        end,
-                        colour = G.C.GREEN
-                    }
+                    message = localize('k_level_up_ex')
                 }
             end
-        end
-        if context.cardarea == G.jokers and context.joker_main  then
-            return {
-                chips = card.ability.extra.MJokerChips,
-                extra = {
-                    mult = card.ability.extra.MJokerMult
-                }
-            }
         end
     end
 }
