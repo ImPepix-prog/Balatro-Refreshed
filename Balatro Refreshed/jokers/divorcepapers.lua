@@ -11,7 +11,7 @@ SMODS.Joker{ --Divorce Papers
         ['name'] = 'Divorce Papers',
         ['text'] = {
             [1] = 'Played {C:attention}Kings {}or {C:attention}Queens{}',
-            [2] = 'have a {C:green}1 in 2{} chance of giving {C:money}5${}'
+            [2] = 'have a {C:green}#1# in #2# {}chance of giving {C:money}5${}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -43,7 +43,7 @@ SMODS.Joker{ --Divorce Papers
     
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
-            if (context.other_card:get_id() == 12) and (context.other_card:get_id() == 12) then
+            if (context.other_card:get_id() == 12) and (context.other_card:get_id() == 13) then
                 if SMODS.pseudorandom_probability(card, 'group_0_7149e9ab', 1, card.ability.extra.odds, 'j_Refreshed_divorcepapers', false) then
                     SMODS.calculate_effect({
                         func = function()

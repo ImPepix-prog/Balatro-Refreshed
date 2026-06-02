@@ -9,7 +9,7 @@ SMODS.Joker{ --rekoJ
     loc_txt = {
         ['name'] = 'rekoJ',
         ['text'] = {
-            [1] = '{C:red}+0.5{} Mult for every remaining card in the deck {C:inactive}(Currently {} {C:red}+#1#{} {C:inactive}Mult){}'
+            [1] = '{C:red}+0.5{} Mult for every remaining card in the deck {C:inactive}(Currently{}{C:red}+#1# {} {C:inactive}Mult){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

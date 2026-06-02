@@ -9,7 +9,7 @@ SMODS.Joker{ --Spongy
     loc_txt = {
         ['name'] = 'Spongy',
         ['text'] = {
-            [1] = 'this joker gains {X:red,C:white}X0.1{} Mult',
+            [1] = 'this joker gains {X:mult,C:white}X0.1{} Mult',
             [2] = 'for every card of your full deck',
             [3] = '{C:inactive}(Currently {}{X:mult,C:white}X#1# {}{C:inactive} Mult){}'
         },

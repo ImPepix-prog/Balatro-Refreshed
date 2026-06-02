@@ -9,7 +9,7 @@ SMODS.Joker{ --Akita Neru
     loc_txt = {
         ['name'] = 'Akita Neru',
         ['text'] = {
-            [1] = 'This Joker gains {X:red,C:white}X1.5{} Mult',
+            [1] = 'This Joker gains {X:mult,C:white}X1.5{} Mult',
             [2] = 'every time you play your most played hand',
             [3] = '{C:inactive}(Currently {}{X:mult,C:white}X#1# {}{C:inactive} Mult){}'
         },
@@ -18,7 +18,7 @@ SMODS.Joker{ --Akita Neru
         }
     },
     pos = {
-        x = 4,
+        x = 6,
         y = 3
     },
     display_size = {
@@ -35,7 +35,7 @@ SMODS.Joker{ --Akita Neru
     atlas = 'CustomJokers',
     pools = { ["Refreshed_Refreshed_jokers"] = true },
     soul_pos = {
-        x = 5,
+        x = 7,
         y = 3
     },
     in_pool = function(self, args)

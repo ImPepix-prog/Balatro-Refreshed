@@ -10,9 +10,9 @@ SMODS.Joker{ --Spoken for
     loc_txt = {
         ['name'] = 'Spoken for',
         ['text'] = {
-            [1] = '{X:red,C:white}X3{} Mult if played hand',
+            [1] = '{X:mult,C:white}X3{} Mult if played hand',
             [2] = 'doesnt contain a face card',
-            [3] = 'otherwise {X:red,C:white}X0.75{} Mult'
+            [3] = 'otherwise {X:mult,C:white}X0.75{} Mult'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

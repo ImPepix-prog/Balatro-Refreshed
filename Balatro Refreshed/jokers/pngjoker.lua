@@ -26,7 +26,7 @@ SMODS.Joker{ --PNG Joker
     },
     cost = 4,
     rarity = 1,
-    blueprint_compat = true,
+    blueprint_compat = false,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
@@ -56,7 +56,7 @@ SMODS.Joker{ --PNG Joker
     end,
     
     calculate = function(self, card, context)
-        if context.end_of_round and context.game_over == false and context.main_eval  then
+        if context.end_of_round and context.game_over == false and context.main_eval  and not context.blueprint then
         end
     end
 }

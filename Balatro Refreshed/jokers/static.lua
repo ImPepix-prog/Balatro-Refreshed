@@ -3,16 +3,15 @@ SMODS.Joker{ --Static
     key = "static",
     config = {
         extra = {
-            StaticMult = 0,
-            StaticChips = 0
+            StaticMult = 0
         }
     },
     loc_txt = {
         ['name'] = 'Static',
         ['text'] = {
             [1] = 'When a hand is played this Joker gains {C:red}+3{} Mult',
-            [2] = 'when a hand is discarted this Joker gains {C:blue}+15{} Chips',
-            [3] = '{C:inactive}(Currrently {}{C:red}+#1# {}{C:inactive}Mult {}{C:blue}+#2# {}{C:inactive}Chips){}'
+            [2] = 'when a hand is discarted this Joker losses {C:red}-1{} Mult',
+            [3] = '{C:inactive}(Currrently {}{C:red}+#1# {}{C:inactive}Mult){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -38,7 +37,7 @@ SMODS.Joker{ --Static
     
     loc_vars = function(self, info_queue, card)
         
-        return {vars = {card.ability.extra.StaticMult, card.ability.extra.StaticChips}}
+        return {vars = {card.ability.extra.StaticMult}}
     end,
     
     calculate = function(self, card, context)
@@ -54,7 +53,7 @@ SMODS.Joker{ --Static
         if context.pre_discard  then
             return {
                 func = function()
-                    card.ability.extra.StaticChips = (card.ability.extra.StaticChips) + 15
+                    card.ability.extra.StaticMult = math.max(0, (card.ability.extra.StaticMult) - 1)
                     return true
                 end,
                 message = "Upgrade!"
@@ -62,10 +61,7 @@ SMODS.Joker{ --Static
         end
         if context.cardarea == G.jokers and context.joker_main  then
             return {
-                chips = card.ability.extra.StaticChips,
-                extra = {
-                    mult = card.ability.extra.StaticMult
-                }
+                mult = card.ability.extra.StaticMult
             }
         end
     end

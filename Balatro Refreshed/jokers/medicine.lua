@@ -9,7 +9,7 @@ SMODS.Joker{ --Medicine
     loc_txt = {
         ['name'] = 'Medicine',
         ['text'] = {
-            [1] = 'This Joker gains {X:red,C:white}X0.2{} Mult',
+            [1] = 'This Joker gains {X:mult,C:white}X0.2{} Mult',
             [2] = 'for every scoring heart',
             [3] = 'resets if any other suit is scored',
             [4] = '{C:inactive}(Currently{} {X:mult,C:white}X#1# {} {C:inactive}Mult){}.'

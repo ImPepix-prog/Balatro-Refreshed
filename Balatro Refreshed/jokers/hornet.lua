@@ -9,7 +9,7 @@ SMODS.Joker{ --Hornet
     loc_txt = {
         ['name'] = 'Hornet',
         ['text'] = {
-            [1] = 'this joker gains {X:red,C:white}X0.2{} Mult',
+            [1] = 'this joker gains {X:mult,C:white}X0.2{} Mult',
             [2] = 'for every discard {C:inactive}(Currrently{}{X:mult,C:white} x#1# {} {C:inactive}Mult){}.'
         },
         ['unlock'] = {

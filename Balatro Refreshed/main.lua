@@ -25,12 +25,36 @@ SMODS.Atlas({
 })
 
 SMODS.Atlas({
+    key = "CustomConsumables", 
+    path = "CustomConsumables.png", 
+    px = 71,
+    py = 95, 
+    atlas_table = "ASSET_ATLAS"
+})
+
+SMODS.Atlas({
+    key = "CustomBoosters", 
+    path = "CustomBoosters.png", 
+    px = 71,
+    py = 95, 
+    atlas_table = "ASSET_ATLAS"
+})
+
+SMODS.Atlas({
     key = "CustomEnhancements", 
     path = "CustomEnhancements.png", 
     px = 71,
     py = 95, 
     atlas_table = "ASSET_ATLAS"
 })
+
+SMODS.Atlas({
+    key = "CustomSeals", 
+    path = "CustomSeals.png", 
+    px = 71,
+    py = 95, 
+    atlas_table = "ASSET_ATLAS"
+}):register()
 
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
@@ -77,15 +101,52 @@ if true then
     assert(SMODS.load_file("jokers/jokerpack.lua"))()
     assert(SMODS.load_file("jokers/cellphone.lua"))()
     assert(SMODS.load_file("jokers/copperjoker.lua"))()
+    assert(SMODS.load_file("jokers/neruflipphone.lua"))()
+    assert(SMODS.load_file("jokers/nyancat.lua"))()
     assert(SMODS.load_file("jokers/hatsunemiku.lua"))()
     assert(SMODS.load_file("jokers/kasaneteto.lua"))()
     assert(SMODS.load_file("jokers/akitaneru.lua"))()
+    assert(SMODS.load_file("jokers/momomemomo.lua"))()
 end
+-- load the consumables
+if true then
+    assert(SMODS.load_file("consumables/elgallo.lua"))()
+    assert(SMODS.load_file("consumables/elborracho.lua"))()
+    assert(SMODS.load_file("consumables/elvaliente.lua"))()
+    assert(SMODS.load_file("consumables/lamaceta.lua"))()
+    assert(SMODS.load_file("consumables/elpescado.lua"))()
+    assert(SMODS.load_file("consumables/elalacran.lua"))()
+    assert(SMODS.load_file("consumables/laestrella.lua"))()
+    assert(SMODS.load_file("consumables/elsol.lua"))()
+    assert(SMODS.load_file("consumables/laluna.lua"))()
+    assert(SMODS.load_file("consumables/labotella.lua"))()
+    assert(SMODS.load_file("consumables/lamano.lua"))()
+    assert(SMODS.load_file("consumables/labota.lua"))()
+    assert(SMODS.load_file("consumables/elgorrito.lua"))()
+    assert(SMODS.load_file("consumables/lacorona.lua"))()
+    assert(SMODS.load_file("consumables/lacampana.lua"))()
+    assert(SMODS.load_file("consumables/lasirena.lua"))()
+    assert(SMODS.load_file("consumables/elapache.lua"))()
+    assert(SMODS.load_file("consumables/elcatrin.lua"))()
+    assert(SMODS.load_file("consumables/lasandia.lua"))()
+    assert(SMODS.load_file("consumables/larana.lua"))()
+    assert(SMODS.load_file("consumables/elcazo.lua"))()
+end
+--load the sets
+assert(SMODS.load_file("consumables/sets.lua"))()
 -- load the enhancements
 if true then
     assert(SMODS.load_file("enhancements/copper.lua"))()
 end
 
+-- load the seals
+if true then
+    assert(SMODS.load_file("seals/tanseal.lua"))()
+end
+
+
+-- load boosters
+assert(SMODS.load_file("boosters.lua"))()
 SMODS.ObjectType({
     key = "Refreshed_food",
     cards = {
@@ -134,9 +195,12 @@ SMODS.ObjectType({
         ["j_Refreshed_jokerpack"] = true,
         ["j_Refreshed_cellphone"] = true,
         ["j_Refreshed_copperjoker"] = true,
+        ["j_Refreshed_neruflipphone"] = true,
+        ["j_Refreshed_nyancat"] = true,
         ["j_Refreshed_hatsunemiku"] = true,
         ["j_Refreshed_kasaneteto"] = true,
-        ["j_Refreshed_akitaneru"] = true
+        ["j_Refreshed_akitaneru"] = true,
+        ["j_Refreshed_momomemomo"] = true
     },
 })
 

@@ -10,9 +10,9 @@ SMODS.Joker{ --Teto Pear
     loc_txt = {
         ['name'] = 'Teto Pear',
         ['text'] = {
-            [1] = '{X:red,C:white}X3{} Mult for 3 rounds, {C:attention}+1{} round',
+            [1] = '{X:mult,C:white}X3{} Mult for 3 rounds, {C:attention}+1{} round',
             [2] = 'for every played hand containing a two pair',
-            [3] = '{C:inactive}(Currently{} {C:attention}#1#{} {C:inactive}rounds){}.'
+            [3] = '{C:inactive}(Currently{} {C:attention}#1# {} {C:inactive}rounds){}.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

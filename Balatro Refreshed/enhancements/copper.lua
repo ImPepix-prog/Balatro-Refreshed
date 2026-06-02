@@ -3,12 +3,13 @@ SMODS.Enhancement {
     key = 'copper',
     pos = { x = 0, y = 0 },
     config = {
-        h_mult = 4
+        h_mult = 4,
+        mult = 4
     },
     loc_txt = {
         name = 'Copper',
         text = {
-            [1] = '{C:red}+8{} Mult while held in hand'
+            [1] = '{C:red}+4{} Mult while held in hand or played'
         }
     },
     atlas = 'CustomEnhancements',

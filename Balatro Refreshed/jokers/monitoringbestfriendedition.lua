@@ -9,7 +9,7 @@ SMODS.Joker{ --Monitoring Best Friend Edition
     loc_txt = {
         ['name'] = 'Monitoring Best Friend Edition',
         ['text'] = {
-            [1] = 'This joker gains {X:red,C:white}X0.5{} Mult',
+            [1] = 'This joker gains {X:mult,C:white}X0.5{} Mult',
             [2] = 'when a king or jack is scored',
             [3] = '{C:inactive}(Currently{} {X:mult,C:white}X#1# {} {C:inactive}Mult){}.'
         },

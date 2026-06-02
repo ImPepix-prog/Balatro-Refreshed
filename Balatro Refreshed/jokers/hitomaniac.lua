@@ -3,14 +3,14 @@ SMODS.Joker{ --Hito maniac
     key = "hitomaniac",
     config = {
         extra = {
-            odds = 2,
-            xmult0 = 1.5
+            repetitions0_min = NaN,
+            repetitions0_max = 2
         }
     },
     loc_txt = {
         ['name'] = 'Hito maniac',
         ['text'] = {
-            [1] = 'when a post-score joker triggers {C:green}1 in 2{} chance of giving {X:mult,C:white}X1.5{} Mult.'
+            [1] = 'Retrigger played {C:attention}Face{} cards {C:green}1~2{} additional times'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -24,7 +24,7 @@ SMODS.Joker{ --Hito maniac
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 6,
+    cost = 8,
     rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
@@ -34,18 +34,13 @@ SMODS.Joker{ --Hito maniac
     atlas = 'CustomJokers',
     pools = { ["Refreshed_Refreshed_jokers"] = true, ["Refreshed_teto_joker"] = true },
     
-    loc_vars = function(self, info_queue, card)
-        
-        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_Refreshed_hitomaniac') 
-        return {vars = {new_numerator, new_denominator}}
-    end,
-    
     calculate = function(self, card, context)
-        if context.other_joker  then
-            if true then
-                if SMODS.pseudorandom_probability(card, 'group_0_a753fe59', 1, card.ability.extra.odds, 'j_Refreshed_hitomaniac', false) then
-                    SMODS.calculate_effect({Xmult = 1.5}, card)
-                end
+        if context.repetition and context.cardarea == G.play  then
+            if context.other_card:is_face() then
+                return {
+                    repetitions = pseudorandom('RANGE:1|2', 1, 2),
+                    message = localize('k_again_ex')
+                }
             end
         end
     end

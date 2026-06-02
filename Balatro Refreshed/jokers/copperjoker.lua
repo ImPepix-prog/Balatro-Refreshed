@@ -10,7 +10,7 @@ SMODS.Joker{ --Copper Joker
     loc_txt = {
         ['name'] = 'Copper Joker',
         ['text'] = {
-            [1] = 'Held in hand cards have a {C:green}1 in 4{} chance',
+            [1] = 'Held in hand cards have a {C:green}#2# in #3# {}chance',
             [2] = 'of becoming {C:enhanced}Copper cards{}'
         },
         ['unlock'] = {
