@@ -25,7 +25,7 @@ SMODS.ConsumableType {
         ['c_Refreshed_elcatrin'] = true,
         ['c_Refreshed_lasandia'] = true,
         ['c_Refreshed_larana'] = true,
-        ['c_Refreshed_elcazo'] = true
+        ['c_Refreshed_elcantarito'] = true
     },
     loc_txt = {
         name = "Loteria",

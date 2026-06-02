@@ -32,9 +32,7 @@ SMODS.Consumable {
             func = function()
                 card_eval_status_text(used_card, 'extra', nil, nil, nil, {message = "+"..tostring(pseudorandom('RANGE:1|3', 1, 3)).." Hands", colour = G.C.GREEN})
                 
-                G.GAME.round_resets.hands = G.GAME.round_resets.hands + pseudorandom('RANGE:1|3', 1, 3)
-                ease_hands_played(pseudorandom('RANGE:1|3', 1, 3))
-                
+                G.GAME.current_round.hands_left = G.GAME.current_round.hands_left + pseudorandom('RANGE:1|3', 1, 3)
                 return true
             end
         }))

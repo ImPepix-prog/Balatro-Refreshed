@@ -4492,6 +4492,49 @@
       "objectType": "joker",
       "info_queues": [],
       "card_dependencies": []
+    },
+    {
+      "objectKey": "newjoker",
+      "id": "1bc9eba8-9eed-478b-b47b-c409b2a8e010",
+      "name": "New Joker",
+      "description": "A {C:blue}custom{} joker with {C:red}unique{} effects.",
+      "imagePreview": "/images/placeholderjokers/placeholder-joker-19.png",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [],
+      "userVariables": [],
+      "placeholderCreditIndex": 24,
+      "hasUserUploadedImage": false,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "Refreshed_jokers"
+      ],
+      "orderValue": 37,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
     }
   ],
   "sounds": [],
@@ -4522,8 +4565,7 @@
               "params": {
                 "set": {
                   "value": "loteria",
-                  "label": "Loteria",
-                  "key": "loteria"
+                  "valueType": "unknown"
                 },
                 "variable": {
                   "valueType": "unknown"
@@ -4589,7 +4631,8 @@
               "type": "edit_cards",
               "params": {
                 "selection_method": {
-                  "value": "random"
+                  "value": "random",
+                  "valueType": "unknown"
                 },
                 "count": {
                   "value": 1000000,
@@ -4597,22 +4640,30 @@
                 },
                 "enhancement": {
                   "value": "random",
-                  "label": "Random Enhancement"
+                  "valueType": "unknown"
                 },
                 "seal": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "edition": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "suit": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "suit_pool": {},
+                "suit_pool": {
+                  "valueType": "unknown"
+                },
                 "rank": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "rank_pool": {}
+                "rank_pool": {
+                  "valueType": "unknown"
+                }
               }
             }
           ],
@@ -4768,31 +4819,39 @@
               "type": "edit_cards",
               "params": {
                 "selection_method": {
-                  "value": "random"
+                  "value": "random",
+                  "valueType": "unknown"
                 },
                 "count": {
                   "value": 3,
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "seal": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "edition": {
-                  "key": "e_foil",
                   "value": "foil",
-                  "label": "Foil (+50 Chips)"
+                  "valueType": "unknown"
                 },
                 "suit": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "suit_pool": {},
+                "suit_pool": {
+                  "valueType": "unknown"
+                },
                 "rank": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "rank_pool": {}
+                "rank_pool": {
+                  "valueType": "unknown"
+                }
               }
             }
           ],
@@ -4810,17 +4869,18 @@
       "orderValue": 5
     },
     {
+      "objectKey": "elalacran",
       "id": "f7aee3eb-9fa6-4c19-aca2-17a8126c1295",
       "name": "El Alacran",
       "description": "3 random held in hand cards gain {C:edition}Holografic{}",
       "imagePreview": "data:image/png;base64,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",
       "overlayImagePreview": "",
-      "orderValue": 6,
       "set": "loteria",
       "cost": 3,
       "unlocked": true,
       "discovered": true,
       "hidden": false,
+      "can_repeat_soul": false,
       "rules": [
         {
           "id": "f057389e-2f10-44f7-810f-0d1cd56c2cb3",
@@ -4833,31 +4893,39 @@
               "type": "edit_cards",
               "params": {
                 "selection_method": {
-                  "value": "random"
+                  "value": "random",
+                  "valueType": "unknown"
                 },
                 "count": {
                   "value": 3,
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "seal": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "edition": {
-                  "key": "e_holo",
                   "value": "holo",
-                  "label": "Holographic (+10 Mult)"
+                  "valueType": "unknown"
                 },
                 "suit": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "suit_pool": {},
+                "suit_pool": {
+                  "valueType": "unknown"
+                },
                 "rank": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "rank_pool": {}
+                "rank_pool": {
+                  "valueType": "unknown"
+                }
               }
             }
           ],
@@ -4870,10 +4938,9 @@
         }
       ],
       "placeholderCreditIndex": 22,
-      "objectKey": "elalacran",
       "objectType": "consumable",
-      "can_repeat_soul": false,
-      "hasUserUploadedImage": false
+      "hasUserUploadedImage": false,
+      "orderValue": 6
     },
     {
       "objectKey": "laestrella",
@@ -4900,31 +4967,39 @@
               "type": "edit_cards",
               "params": {
                 "selection_method": {
-                  "value": "random"
+                  "value": "random",
+                  "valueType": "unknown"
                 },
                 "count": {
                   "value": 3,
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "seal": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "edition": {
-                  "key": "e_polychrome",
                   "value": "polychrome",
-                  "label": "Polychrome (X1.5 Mult)"
+                  "valueType": "unknown"
                 },
                 "suit": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "suit_pool": {},
+                "suit_pool": {
+                  "valueType": "unknown"
+                },
                 "rank": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "rank_pool": {}
+                "rank_pool": {
+                  "valueType": "unknown"
+                }
               }
             }
           ],
@@ -4966,31 +5041,39 @@
               "type": "edit_cards",
               "params": {
                 "selection_method": {
-                  "value": "random"
+                  "value": "random",
+                  "valueType": "unknown"
                 },
                 "count": {
                   "value": 1000000,
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "seal": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "edition": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "suit": {
                   "value": "Hearts",
-                  "label": "Hearts",
                   "valueType": "text"
                 },
-                "suit_pool": {},
-                "rank": {
-                  "value": "none"
+                "suit_pool": {
+                  "valueType": "unknown"
                 },
-                "rank_pool": {}
+                "rank": {
+                  "value": "none",
+                  "valueType": "unknown"
+                },
+                "rank_pool": {
+                  "valueType": "unknown"
+                }
               }
             }
           ],
@@ -5032,31 +5115,39 @@
               "type": "edit_cards",
               "params": {
                 "selection_method": {
-                  "value": "random"
+                  "value": "random",
+                  "valueType": "unknown"
                 },
                 "count": {
                   "value": 1000000,
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "seal": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "edition": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "suit": {
                   "value": "Clubs",
-                  "label": "Clubs",
                   "valueType": "text"
                 },
-                "suit_pool": {},
-                "rank": {
-                  "value": "none"
+                "suit_pool": {
+                  "valueType": "unknown"
                 },
-                "rank_pool": {}
+                "rank": {
+                  "value": "none",
+                  "valueType": "unknown"
+                },
+                "rank_pool": {
+                  "valueType": "unknown"
+                }
               }
             }
           ],
@@ -5099,7 +5190,6 @@
               "params": {
                 "selection_method": {
                   "value": "random",
-                  "label": "Random Cards",
                   "valueType": "text"
                 },
                 "count": {
@@ -5107,23 +5197,31 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "random",
-                  "label": "Random Seal"
+                  "valueType": "unknown"
                 },
                 "edition": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
                 "suit": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "suit_pool": {},
+                "suit_pool": {
+                  "valueType": "unknown"
+                },
                 "rank": {
-                  "value": "none"
+                  "value": "none",
+                  "valueType": "unknown"
                 },
-                "rank_pool": {}
+                "rank_pool": {
+                  "valueType": "unknown"
+                }
               }
             }
           ],
@@ -5273,8 +5371,13 @@
                   "valueType": "unknown"
                 },
                 "duration": {
-                  "value": "permanent",
-                  "valueType": "unknown"
+                  "value": "round",
+                  "label": "This Round",
+                  "valueType": "text",
+                  "exempt": [
+                    "voucher",
+                    "deck"
+                  ]
                 },
                 "value": {
                   "value": "RANGE:1|3",
@@ -5421,9 +5524,8 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "key": "m_Refreshed_copper",
                   "value": "m_Refreshed_copper",
-                  "label": "Copper"
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "none",
@@ -5496,9 +5598,8 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "key": "m_bonus",
                   "value": "m_bonus",
-                  "label": "Bonus"
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "none",
@@ -5542,7 +5643,7 @@
       "objectKey": "elapache",
       "id": "790656af-b93c-4265-9edb-e8ddccc2ba40",
       "name": "El Apache",
-      "description": "3 random held in hand cards become {C:attention}enhanced{} cards",
+      "description": "3 random held in hand cards become {C:enhanced}Stone{} cards",
       "imagePreview": "data:image/png;base64,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",
       "overlayImagePreview": "",
       "set": "loteria",
@@ -5571,9 +5672,8 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "key": "m_stone",
                   "value": "m_stone",
-                  "label": "Stone"
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "none",
@@ -5646,9 +5746,8 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "key": "m_lucky",
                   "value": "m_lucky",
-                  "label": "Lucky"
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "none",
@@ -5721,9 +5820,8 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "key": "m_mult",
                   "value": "m_mult",
-                  "label": "Mult"
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "none",
@@ -5796,9 +5894,8 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "key": "m_wild",
                   "value": "m_wild",
-                  "label": "Wild"
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "none",
@@ -5839,9 +5936,9 @@
       "orderValue": 20
     },
     {
-      "objectKey": "elcazo",
+      "objectKey": "elcantarito",
       "id": "21b91cc7-ea13-4f27-a4ea-3ffe043b358c",
-      "name": "El Cazo",
+      "name": "El Cantarito",
       "description": "3 random held in hand cards become {C:enhanced}Glass{} cards",
       "imagePreview": "data:image/png;base64,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",
       "overlayImagePreview": "",
@@ -5871,9 +5968,8 @@
                   "valueType": "number"
                 },
                 "enhancement": {
-                  "key": "m_glass",
                   "value": "m_glass",
-                  "label": "Glass"
+                  "valueType": "unknown"
                 },
                 "seal": {
                   "value": "none",
@@ -6290,16 +6386,23 @@
   ],
   "seals": [
     {
+      "objectKey": "tanseal",
       "objectType": "seal",
       "id": "56044de1-2591-4313-9c38-492ee92417be",
       "name": "Tan seal",
       "description": "When scored, {C:green}#1# in #2# {}chance of creating a[s]{C:purple}Loteria{} card",
       "imagePreview": "data:image/png;base64,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",
-      "objectKey": "tanseal",
+      "pos": {
+        "x": 0,
+        "y": 0
+      },
       "badge_colour": "#000000",
       "unlocked": true,
       "discovered": true,
+      "no_collection": false,
       "sound": "gold_seal",
+      "volume": 0.4,
+      "pitch": 1.2,
       "rules": [
         {
           "id": "bf75ad6b-007a-48e3-be4c-b1bca548f87e",
@@ -6327,25 +6430,30 @@
                   "params": {
                     "set": {
                       "value": "loteria",
-                      "label": "Loteria",
-                      "key": "loteria"
+                      "valueType": "unknown"
                     },
-                    "variable": {},
+                    "variable": {
+                      "valueType": "unknown"
+                    },
                     "specific_card": {
-                      "value": "random"
+                      "value": "random",
+                      "valueType": "unknown"
                     },
                     "soulable": {
-                      "value": "n"
+                      "value": "n",
+                      "valueType": "unknown"
                     },
                     "is_negative": {
-                      "value": "n"
+                      "value": "n",
+                      "valueType": "unknown"
                     },
                     "count": {
                       "value": 1,
                       "valueType": "number"
                     },
                     "ignore_slots": {
-                      "value": "n"
+                      "value": "n",
+                      "valueType": "unknown"
                     }
                   }
                 }
@@ -6359,15 +6467,15 @@
           }
         }
       ],
+      "userVariables": [],
       "placeholderCreditIndex": 4,
-      "orderValue": 1,
-      "no_collection": false,
-      "hasUserUploadedImage": true
+      "hasUserUploadedImage": true,
+      "orderValue": 1
     }
   ],
   "editions": [],
   "vouchers": [],
   "decks": [],
   "version": "1.0.0",
-  "exportedAt": "2026-06-02T01:34:46.577Z"
+  "exportedAt": "2026-06-02T04:09:26.319Z"
 }

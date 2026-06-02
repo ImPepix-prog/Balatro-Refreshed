@@ -1,12 +1,12 @@
 
 SMODS.Consumable {
-    key = 'elapache',
+    key = 'elcantarito',
     set = 'loteria',
-    pos = { x = 6, y = 1 },
+    pos = { x = 0, y = 2 },
     loc_txt = {
-        name = 'El Apache',
+        name = 'El Cantarito',
         text = {
-            [1] = '3 random held in hand cards become {C:enhanced}Stone{} cards'
+            [1] = '3 random held in hand cards become {C:enhanced}Glass{} cards'
         }
     },
     cost = 3,
@@ -60,7 +60,7 @@ SMODS.Consumable {
                 trigger = 'after',
                 delay = 0.1,
                 func = function()
-                    affected_cards[i]:set_ability(G.P_CENTERS['m_stone'])            
+                    affected_cards[i]:set_ability(G.P_CENTERS['m_glass'])            
                     return true
                 end
             }))

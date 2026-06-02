@@ -107,6 +107,7 @@ if true then
     assert(SMODS.load_file("jokers/kasaneteto.lua"))()
     assert(SMODS.load_file("jokers/akitaneru.lua"))()
     assert(SMODS.load_file("jokers/momomemomo.lua"))()
+    assert(SMODS.load_file("jokers/newjoker.lua"))()
 end
 -- load the consumables
 if true then
@@ -130,7 +131,7 @@ if true then
     assert(SMODS.load_file("consumables/elcatrin.lua"))()
     assert(SMODS.load_file("consumables/lasandia.lua"))()
     assert(SMODS.load_file("consumables/larana.lua"))()
-    assert(SMODS.load_file("consumables/elcazo.lua"))()
+    assert(SMODS.load_file("consumables/elcantarito.lua"))()
 end
 --load the sets
 assert(SMODS.load_file("consumables/sets.lua"))()
@@ -200,7 +201,8 @@ SMODS.ObjectType({
         ["j_Refreshed_hatsunemiku"] = true,
         ["j_Refreshed_kasaneteto"] = true,
         ["j_Refreshed_akitaneru"] = true,
-        ["j_Refreshed_momomemomo"] = true
+        ["j_Refreshed_momomemomo"] = true,
+        ["j_Refreshed_newjoker"] = true
     },
 })
 
